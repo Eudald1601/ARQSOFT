@@ -1,6 +1,7 @@
 from Building import Building
 from ComparableSorter import ComparableSorter
 from ComparableBubbleSorter import ComprableBubbleSorter
+from ComparableDirInsertSorter import ComparableDirInsertSorter
 import random
 class Client:
 
@@ -17,4 +18,7 @@ if __name__ == "__main__":
     building_array = []
     for i in range(10):
         building_array.append(Building(random.randint(10,200), random.randint(5,500)))
+    print("Bubble")
     client.sortByVolumeComparable(building_array, sorter = ComprableBubbleSorter())
+    print("Dir Insert")
+    client.sortByVolumeComparable(building_array, sorter = ComparableDirInsertSorter() )
