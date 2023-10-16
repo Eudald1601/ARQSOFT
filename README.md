@@ -62,6 +62,8 @@ Number: 1
 ACTORS:
    - Players: persons that play the game.
 
+PRECONDITIONS:
+   - Conditions that are met befare starting the use case they must not be tested in the use case
 BASIC FLOW: 
 1. System gives turn to the right player
 2. Player plays the turn
@@ -84,4 +86,7 @@ Status is NOT STOP
 4.a There is no winner 
    - System notifies stop by the suiteable reason
    - Go to step 5 of basic flow
+
+![](https://github.com/Eudald1601/RevisitingPolymorphism/blob/main/img/diagrama.drawio.png)
+
 
