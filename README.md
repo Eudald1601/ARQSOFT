@@ -45,9 +45,11 @@ WHAT WE (analyst) have to do with regards to the ue cases?
 Worked EXAMPLE: CASE STUDY
 
 Identification of use cases
+
 Types of users: 
- -Player
- -Administrator
+ - Player
+ - Administrator
+
 To identify the relevant interactions that a person who wants to use this system has to perform with that system.
 
 ![](https://github.com/Eudald1601/RevisitingPolymorphism/blob/main/example.drawio.png)
