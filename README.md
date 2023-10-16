@@ -87,6 +87,7 @@ Status is NOT STOP
    - System notifies stop by the suiteable reason
    - Go to step 5 of basic flow
 
+
 ![](https://github.com/Eudald1601/RevisitingPolymorphism/blob/main/img/diagrama.drawio.png)
 
 
