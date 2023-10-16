@@ -41,7 +41,7 @@ WHAT WE (analyst) have to do with regards to the ue cases?
       - Start with the one thta concentrates the most relevant core goal.
       - While developing a use case, an analyst can identify another use case not previously identified. This means a 'tree' of use cases:
         
-        ![](https://github.com/Eudald1601/RevisitingPolymorphism/blob/main/img1.drawio.png)
+        ![](https://github.com/Eudald1601/RevisitingPolymorphism/blob/main/img/img1.drawio.png)
 
 Worked EXAMPLE: CASE STUDY
 
@@ -53,7 +53,7 @@ Types of users:
 
 To identify the relevant interactions that a person who wants to use this system has to perform with that system.
 
-![](https://github.com/Eudald1601/RevisitingPolymorphism/blob/main/example.drawio.png)
+![](https://github.com/Eudald1601/RevisitingPolymorphism/blob/main/img/example.drawio.png)
 
 Name: Play game
 
