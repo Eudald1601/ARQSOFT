@@ -63,7 +63,12 @@ ACTORS:
    - Players: persons that play the game.
 
 PRECONDITIONS:
-   - Conditions that are met befare starting the use case they must not be tested in the use case
+   - Conditions that are met befare starting the use case they must not be tested in the use case.
+   - The game has been created
+   - All the players have been added to the game
+
+POSTCONDITIONS:
+   - Game ended or suspended.
 BASIC FLOW: 
 1. System gives turn to the right player
 2. Player plays the turn
