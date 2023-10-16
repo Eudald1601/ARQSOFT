@@ -36,3 +36,7 @@ WHAT WE (analyst) have to do with regards to the ue cases?
          - Short
          - Include a VERB
         
+2. Build all the identified relevant use cases.
+      - ORDERING THIS DEVELOPMENT
+      - Start with the one thta concentrates the most relevant core goal.
+      - While developing a use case, an analyst can identify another use case not previously identified. This means a 'tree' of use cases 
