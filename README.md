@@ -74,3 +74,10 @@ Status is NOT STOP
 4. System notifies WINNER to all plaayers
 5. System notifies end of game to all players.
 
+**EXTENSIONS**
+
+3.a Player makes a mistake while is playing the turn
+   - System notifies player
+   - System request player turn again
+   - Go to step 2 
+
