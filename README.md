@@ -79,5 +79,9 @@ Status is NOT STOP
 3.a Player makes a mistake while is playing the turn
    - System notifies player
    - System request player turn again
-   - Go to step 2 
+   - Go to step 2
+
+4.a There is no winner 
+   - System notifies stop by the suiteable reason
+   - Go to step 5 of basic flow
 
