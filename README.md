@@ -71,5 +71,6 @@ Repeat 1 to 3 while:
 
 Status is NOT STOP
 
-4. System notifies WINNER
+4. System notifies WINNER to all plaayers
+5. System notifies end of game to all players.
 
