@@ -26,3 +26,13 @@ Two types of use cases:
 __Another informed definition:__
 
 WRITEN STORIES on how some actor uses the software system under development for ACHIEVING a RELLEVANT GOAL for that actor and, consequenty, getting an ADDED VALUE.
+
+WHAT WE (analyst) have to do with regards to the ue cases?
+
+1. IDENTIFY THE RELEVANT USE CASES FRO THE SOFTWARE SYSTEM under development. Taking into account:
+      - Diferent types of users
+      - Identify the added values each type wants to get from the system <--> GOALS TO BE ACHIEVED by the system.
+      - Name the use cases:
+         - Short
+         - Include a VERB
+        
