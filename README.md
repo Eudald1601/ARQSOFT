@@ -40,7 +40,7 @@ WHAT WE (analyst) have to do with regards to the ue cases?
       - ORDERING THIS DEVELOPMENT
       - Start with the one thta concentrates the most relevant core goal.
       - While developing a use case, an analyst can identify another use case not previously identified. This means a 'tree' of use cases:
-        ![](RevisitingPolymorphism/img1.drawio)
+        ![](https://github.com/Eudald1601/RevisitingPolymorphism/blob/main/img1.drawio)
 
 Worked EXAMPLE: CASE STUDY
 
