@@ -54,3 +54,13 @@ Types of users:
 To identify the relevant interactions that a person who wants to use this system has to perform with that system.
 
 ![](https://github.com/Eudald1601/RevisitingPolymorphism/blob/main/example.drawio.png)
+
+Name: Play game
+
+Number: 1 
+
+ACTORS:
+   - Players: persons that play the game.
+
+BASIC FLOW: 
+1. System gives turn to the right player
