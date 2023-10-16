@@ -50,3 +50,4 @@ Types of users:
  -Administrator
 To identify the relevant interactions that a person who wants to use this system has to perform with that system.
 
+![](https://github.com/Eudald1601/RevisitingPolymorphism/blob/main/example.drawio.png)
