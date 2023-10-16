@@ -65,3 +65,11 @@ ACTORS:
 BASIC FLOW: 
 1. System gives turn to the right player
 2. Player plays the turn
+3. System performs actions as required by new state
+
+Repeat 1 to 3 while:
+
+Status is NOT STOP
+
+4. System notifies WINNER
+
