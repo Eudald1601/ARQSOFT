@@ -153,3 +153,8 @@ BASIC FLOW:
    1. Same as 2.a.1
    2. Same as 2.a.1
 
+2.d System detects that the movement would leave Player's King is threatened by some piece of player's opponent.
+   1. Same as 2.a.1
+   2. Same as 2.a.1
+
+2.e System detects that the path is free
