@@ -157,4 +157,75 @@ BASIC FLOW:
    1. Same as 2.a.1
    2. Same as 2.a.1
 
-2.e System detects that the path is free
+2.e System detects that the path is NOT free
+
+Name: movementOFBishopOK
+
+Number: 3
+
+ACTORS: 
+
+PRECONDITIONS:
+   - Player has reported movement.
+   - Origin cell has a piece a bishop of the player.
+   - In destination cell there is no piece or there is a piece of the opponent.
+
+BASIC FLOW:
+
+1. System detects that the movement is in diagonal.
+2. System ends with movement ok.
+
+**EXTENSIONS**
+
+1.a System detects that movement is NOT diagonal
+
+   1. System ends with movement KO
+
+Name: BishopPathFree
+
+Number: 4
+
+ACTORS:
+
+PRECONDITIONS:
+   - Player has requested movement
+   - Origin cell has a Bishop of the player.
+   - Destination cell: No piece of the Opponent
+   - Movement requested is movement of Bishop
+
+BASIC FLOW:
+1. System ends with path FREE
+
+**EXTENSIONS** 
+
+   1.a System detects that in diagonal from origin cell to dest-cell on the board there is second piece
+
+      1. System ends with path NO FREE.
+
+Name: KingIsThreatened
+
+Number: 5
+
+PRECONDITIONS:
+   - Path from origin to destination is free
+
+BASIC FLOW:
+
+1. System takes a piece
+2. System notices that movement to king's opponent is a movement of the piece
+3. System notices that the path is NOT free
+
+Repeat 1 to 3 while there are pieces left
+
+4. System returns king NOT threatened
+
+**EXTENSIONS**
+
+1.a System notices movement does not correspond to piece
+
+   1. Go to Step 1 of basic flow.
+
+2.a System notiece that the path is FREE.
+
+   1. System ends use case with king threatened
+      
