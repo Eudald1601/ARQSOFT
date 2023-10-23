@@ -69,6 +69,7 @@ PRECONDITIONS:
 
 POSTCONDITIONS:
    - Game ended or suspended.
+     
 BASIC FLOW: 
 1. System gives turn to the right player
 2. Player plays the turn
@@ -95,4 +96,41 @@ Status is NOT STOP
 
 ![](https://github.com/Eudald1601/RevisitingPolymorphism/blob/main/img/diagrama.drawio.png)
 
+
+Name: PlayTurnChess
+
+Number: 2
+
+ACTORS: Players
+
+PRECONDITIONS:
+   - Game selected is chess
+   - Chess framework created
+   - 2 players aded
+
+POSTCONDITIONS:
+   - Player turn completed
+
+BASIC FLOW:
+1. Player requests to move a piece from an origin cell to a destination cell of the board.
+2. System  moves the pieces as requested by player
+3. System ends use case with status go on.
+
+**EXTENSIONS**
+
+1.a Player requests to temporally stop 
+
+   1. System notifies stop requests to the opponent.
+   2. Opponent accepts the stop request.
+   3. System notifies stop.
+   4. System ends use case with status stop temporaily.
+
+      2.a Oponents rejects stop request.
+         1. System notifies rejection.
+         2. System asks for new action to player with turn.
+         3. Go to step 1 of basic flow.
+            
+1.b Player surrends
+   1. System notifies to players
+   2. System ends use case with stop by surrending
 
