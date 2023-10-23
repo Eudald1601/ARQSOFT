@@ -134,3 +134,7 @@ BASIC FLOW:
    1. System notifies to players
    2. System ends use case with stop by surrending
 
+1.c Player requests draw
+
+(AS 1.a but in case that the opponent accecpt it, the system ends with stop by draw)
+
