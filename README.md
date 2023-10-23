@@ -138,3 +138,18 @@ BASIC FLOW:
 
 (AS 1.a but in case that the opponent accecpt it, the system ends with stop by draw)
 
+2.a System detects that either there is NOT any piece or there is a piece of the opponent in origin cell.
+
+   1. System notifies this situation and ask new action to player.
+   2. Go to step 1 of basic flow.
+
+2.b System detects that there is a piece of the player at destination cell.
+
+   1. Same as 2.a.1
+   2. Same as 2.a.1
+
+2.c System detects that the movement requested DOES NOT CORRESPOND to the piece in origin cell.
+  
+   1. Same as 2.a.1
+   2. Same as 2.a.1
+
