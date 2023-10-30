@@ -311,4 +311,35 @@ BASIC FLOW:
    4.a Tehre are no third party
    
       - End use case
+
+
+
+# DOMAIN MODEL
+
+Is a visual (Graphic) representation of:
+   1. The relevant concepts (they are called conceptual classes) present within the DOMAIN where the problem has been defined
+   2. The relationships that, physically or conceptually, interconnect these classes / concepts.
+
+Represents as a UML Class Diagram without any indication of methods, which model:
+
+   a) CONCEPTS / OBJECTS in the domain of the problem AS CLASSES
+
+   b) Properties of OBJECTS / CONCEPTS as attributes
+
+   c) Conceptual or physical connections betwwen OBJECTS / CONCEPTS as reelationships:
+      -Inheritance(generalization) (IS - A)
+      -Association
+      -Dependency
+
+The domain model will be the seed for a design phase artifact: the design class diagram (DCD). 
+
+The DCD: 
+   1. Will likely transform the conceptual classes of the domain model in classes.
+   2. Will incorporate additional classes not corresponding to any of the conceptual classes in the DM.
+   3. Will likely appear the relationships that appeared in the DM.
+   4. Will appear new relationships between:
+        - Classes corresponding to conceptual classes in the DM and new classes
+        - New classes
+   5. Attributes and methods signatures for all the classes.
       
+ 
