@@ -63,6 +63,7 @@ ACTORS:
    - Players: persons that play the game.
 
   ------- Conditions that are met befare starting the use case they must not be tested in the use case. -----
+  
 PRECONDITIONS:
    - The game has been created
    - All the players have been added to the game
@@ -199,7 +200,6 @@ BASIC FLOW:
 **EXTENSIONS** 
 
    1.a System detects that in diagonal from origin cell to dest-cell on the board there is second piece
-
       1. System ends with path NO FREE.
 
 Name: KingIsThreatened
@@ -303,9 +303,12 @@ BASIC FLOW:
    4. System creates third party
 
 **EXTENSIONS** 
+
    3.a There are no tokens
+   
       1 - Go to step 4 of B.F
    
    4.a Tehre are no third party
+   
       1 - End use case
       
