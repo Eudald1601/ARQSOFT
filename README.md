@@ -363,3 +363,30 @@ Text analysis of req list and use cases:
         - Names of attributes. (colour, lenght, size, width, age, ... )
         - Names of structures
  
+
+
+
+IDENTIFYING RELATIONSHIPS
+Two Methods:
+   1.Text analysis of Req List/Use cases (BEGINNERS)
+   2Associations categories list + generalization relationship.
+
+
+1)Text analysis:
+1. Take every VERB that connects two concepts objects identified and keep in the task of identifying OBJECTS/CONCEPTS as a potential relationship between these two concepts/objects
+2. DISCARD -Nonrelevant verbs
+           -ACTIONS
+3. Identifying th type of relationship inheritance (IS-A_SPECIFIC_TYPE-OF) association or dependency.
+4. For each association:
+     a)Indicate MULTIPLICITY
+     b)Indicat roles
+
+   POSAR FOTOs
+
+Implementation of relationship in code:
+Inheritance:
+Clas B(A): -->Python                  
+public class B extends A --> Java
+
+Association are implemneted by  ATTRIBUTES
+public class A ~associated~ one to many B 
