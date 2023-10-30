@@ -237,4 +237,75 @@ Executing a use case <--> talking about the system executing the steps in one of
 
 The execution of the use cases must take place in a certain proper order. And this order is defined by PRECONDITIONS and POST CONDITIONS of the use cases.
 
+Name: createGame
 
+Number: x
+
+PRE-CONDITION: 
+   1. User has requested to create the game
+
+POST-CONDITIONS:
+   1. Game framework created: user added as player to the created game
+
+BASIC FLOW:
+   1. System creates the game framework
+   2. System adds user as players
+
+Name: BuildFrameworkChess
+
+PRE-CONDITIONS: 
+   1. user has requested to create ChessGame
+
+POST-CONDITIONS:
+   1. Framework for chess created.
+      - Board
+      - Cells
+
+BASIC FLOW:
+   1. System creates the chess board.
+   2. System creates all the chess cells in the ChessBoard.
+
+NAME: AddPlayerChess 
+
+PRECONDITIONS:
+   1. The chess framework has been created
+
+BASIC FLOW:
+   1. System creates the pieces.
+   2. System gives pieces to player.
+   3. System places the pieces on the board.
+
+NAME: BuildFrameworkMonopoly
+
+PRECONDITIONS: 
+
+POSTCONDITIONS: 
+   1. Monopoly Board, Cells, {TOKENS: Money, Cards, house, hotels}
+
+BASICFLOW:
+   1. System creates MonopolyBoard.
+   2. System creates cells.
+   3. System creates bank (third party)
+   4. System creates tokens (money, houses, cards, hotels)
+
+NAME: BuildFramework
+
+PRECONDITIONS:
+   1. User has requested to the play game
+
+POSTCONDITIONS:
+   1. Board, Cells, Tokens and third party
+
+BASIC FLOW:
+   1. System creates Board
+   2. System creates cells
+   3. System creates tokens
+   4. System creates third party
+
+**EXTENSIONS** 
+   3.a There are no tokens
+      1 - Go to step 4 of B.F
+   
+   4.a Tehre are no third party
+      1 - End use case
+      
