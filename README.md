@@ -62,8 +62,8 @@ Number: 1
 ACTORS:
    - Players: persons that play the game.
 
+  ------- Conditions that are met befare starting the use case they must not be tested in the use case. -----
 PRECONDITIONS:
-   - Conditions that are met befare starting the use case they must not be tested in the use case.
    - The game has been created
    - All the players have been added to the game
 
@@ -228,4 +228,13 @@ Repeat 1 to 3 while there are pieces left
 2.a System notiece that the path is FREE.
 
    1. System ends use case with king threatened
-      
+
+![](https://github.com/Eudald1601/RevisitingPolymorphism/blob/main/img/example.drawio.png)
+
+Execution paths of the system we use the sentence: "when this use case is executed" on "then use case X is executed".
+
+Executing a use case <--> talking about the system executing the steps in one of the scenarios of a use case.
+
+The execution of the use cases must take place in a certain proper order. And this order is defined by PRECONDITIONS and POST CONDITIONS of the use cases.
+
+
