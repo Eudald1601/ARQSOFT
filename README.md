@@ -359,5 +359,7 @@ Text analysis of req list and use cases:
    2. Discard
         - Redundant nouns.
         - Ambiguous / vague nouns.
-        - 
+        - Non relevant concets / objects.
+        - Names of attributes. (colour, lenght, size, width, age, ... )
+        - Names of structures
  
