@@ -341,5 +341,23 @@ The DCD:
         - Classes corresponding to conceptual classes in the DM and new classes
         - New classes
    5. Attributes and methods signatures for all the classes.
-      
+
+Techniques for building the Domain Model.
+   1. Techniques for IDENTIFYING concpets / objects.
+   2. Techniques for IDENTIFYING relationships.
+   3. Techniques for IDENTIFYING attributes or objects / concepts.
+
+1. Identifying objects / concepts in the domain.
+
+   3 Methods:
+      1. For begginers: Textual analysis of List of requirements / use cases.
+      2. Derivation from conceptual class category lists.
+      3. Study: Learn from experts.
+  
+Text analysis of req list and use cases:
+   1. Take any noun that appears in the req list / use cases as a potential object concpet to be represented in the domain model.
+   2. Discard
+        - Redundant nouns.
+        - Ambiguous / vague nouns.
+        - 
  
