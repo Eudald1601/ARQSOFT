@@ -306,9 +306,9 @@ BASIC FLOW:
 
    3.a There are no tokens
    
-      1 - Go to step 4 of B.F
+      - Go to step 4 of B.F
    
    4.a Tehre are no third party
    
-      1 - End use case
+      - End use case
       
