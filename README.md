@@ -390,3 +390,38 @@ public class B extends A --> Java
 
 Association are implemneted by  ATTRIBUTES
 public class A ~associated~ one to many B 
+
+**Relationships**
+
+Inheritance --> IS-A-TYPE-OF. Strongest relationship
+
+Dpendency --> Class A has a dependency relationship with class B if:
+   - An instance of B is a local variable of some method of A.
+   - An instance of B is an argument of a method of A.
+   - An instance of B is the return value of a method.
+
+     Desing goal:
+     -   To keep dependencies (Couplings) as low as possible.
+
+Association --> Any relationship that is neither an inheritance nor a dependency.
+   - Discovered by text analysis: verbs that connect nouns that are relevant concepts/objects in the domain (different than IS-A)
+
+Particular types of associations
+
+Associations that are established between an object/concept which is a whole and an object/concept which is a part of this whole.
+
+
+In aggregations. If the whole disappears, its parts can still exists
+
+In composition. If the whole disappears, the parts also disappear.
+
+Appear during the design process
+   . When specifies the arguments of the methods or the return values of the methods.   
+
+Implementation of associations
+   1. Associations are implemented with attributes.
+Because an association somehow implies that you have to provide to an object whose class is involved in the association, the capability of going to another object of the other class involved in the assossition
+
+- Given a certain person, the system must be able to present to the user the details of the car owned by that person.
+- How can the system go from an object vlass Person to the object of class Car that is owned by that person.
+
