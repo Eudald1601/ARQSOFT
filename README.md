@@ -441,6 +441,19 @@ Implementation of associations
 Arrow means: capability of arrive to an object of the class pointed by the arrow from an object of the other class in the association
 
 
-*** Exercice Domain Model ***
+*** FROM DOMAIN MODEL TO FIRST DESIGN ***
+The DM is the seed of the DCB
 
+DCD: UML class diagram showing ALL the classes, with all their attributes and all their methods signatures, as well as their relationships
+
+REMARK 1: In general NO all the dependencies are shown.
+
+How to go from DM to first DCD?
+
+1. If no navegability indicaation in associations add them
+2. Identify abstractions
+   - If we can identify some attribute --> abstract class
+   - Else --> interface
+
+Candidates to absractions: Classes that appear in a hierarchy and have subclasses.
 
