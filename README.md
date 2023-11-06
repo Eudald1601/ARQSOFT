@@ -422,6 +422,25 @@ Implementation of associations
    1. Associations are implemented with attributes.
 Because an association somehow implies that you have to provide to an object whose class is involved in the association, the capability of going to another object of the other class involved in the assossition
 
+![](https://github.com/Eudald1601/RevisitingPolymorphism/blob/main/carperson.drawio.png)
+
 - Given a certain person, the system must be able to present to the user the details of the car owned by that person.
 - How can the system go from an object vlass Person to the object of class Car that is owned by that person.
+
+  Cardinality:
+
+  In association between A and B. Cardianlity of A is the number of objects of B that may be associated with one object of  the cardinality of A is represented next to B.
+
+   Symbols:
+     -  One object B is associated with B objects A
+     -  Absence of any indication of cardinality means 1
+     -  One object B is associated with 1, 2, or 3 objects A
+ 
+Implementation of associations
+
+Arrow means: capability of arrive to an object of the class pointed by the arrow from an object of the other class in the association
+
+
+*** Exercice Domain Model ***
+
 
