@@ -469,3 +469,22 @@ PROPERTY:
 Anything placed in a certain layer is more stable than anthing placed in outer layers and is less stable than anthing in inner layers.
 
 Stable: related to the likelihood of change.
+
+Rule in Software Systems: Make our software to depend as much as possible on stable classes/tools
+
+Dependency / Couplings:
+
+Mesurement of how strongly one element is connected to, has knowledge of, or relies on other elements.
+
+One software design goal:
+To reduce as mush as possible the compling with non-stable elements!!
+
+There is nothing wrong on coupling with stable elements.
+
+- Subclasses and superclasses
+- Associated classes
+- Classes with dependency relationship
+   - Arguments
+   - Local variables
+   - Return values
+How to use clean architecture?? Make that elements in one layer do not depend on elements that appear in outer layers.    
