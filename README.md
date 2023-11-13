@@ -457,3 +457,15 @@ How to go from DM to first DCD?
 
 Candidates to absractions: Classes that appear in a hierarchy and have subclasses.
 
+
+*** LAYERING ***
+
+Distribution of code in several layers.
+
+![](https://github.com/Eudald1601/RevisitingPolymorphism/blob/main/img/layering.png)
+
+PROPERTY:
+
+Anything placed in a certain layer is more stable than anthing placed in outer layers and is less stable than anthing in inner layers.
+
+Stable: related to the likelihood of change.
