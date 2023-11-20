@@ -511,5 +511,6 @@ Formulation 1:
       - Human resources
       - Econmics
       - Academic
-    But requirements Change. Therefore, there will be change requests design should be such as a change request from one source. Must not interact with code that satisfies needs of sources different than the one that has made the CR.
+
+But requirements Change. Therefore, there will be change requests design should be such as a change request from one source. Must not interact with code that satisfies needs of sources different than the one that has made the CR.
          
