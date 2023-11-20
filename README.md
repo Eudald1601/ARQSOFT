@@ -514,3 +514,15 @@ Formulation 1:
 
 But requirements Change. Therefore, there will be change requests design should be such as a change request from one source. Must not interact with code that satisfies needs of sources different than the one that has made the CR.
          
+Formulation 2: Gather together things that change for the same reason. Separate them from things that change by different reasons . SEPARATION OF CONCERS.
+
+**OVERVIEW OF DESIGN**
+1. Take DM and build first version of D[]
+2. Identify ALL THE METHODS required for solving the problem, and specify them USE CASE
+3. Assign to each method to a class in a way that:
+   1. Keeps coupling as low as possible and in the right direction
+   2. Keep cohesion as high as possible(SRP)
+
+GRASP: Geral Responsibility Assigment Software Patterns.
+
+Rules that we will follow for assigning one method to ne class for keeping high cohesion and low coupling.
