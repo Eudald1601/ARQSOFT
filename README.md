@@ -526,3 +526,27 @@ Formulation 2: Gather together things that change for the same reason. Separate 
 GRASP: Geral Responsibility Assigment Software Patterns.
 
 Rules that we will follow for assigning one method to ne class for keeping high cohesion and low coupling.
+
+Almost any program will:
+1. Interact with users for receiving requests or return results
+2. Create objects
+3. Put objects to interact with other objects invoking thir methods.
+
+Controller (GRASP)
+
+Question(PROBLEM): What objects (beyond the UI) receives the requests from user, and coordinates (controls) the software system operations?
+
+Answer: Assign this responsibility to A class (controller) that represents either. The whole system, or a whole subsystem or a use case scenario
+
+Controller: delegates in other classe the execution of the tasts required for satisfying the user's requests.
+
+2) CREATE OBJECTS:
+Queston(PROBLEM): Whow should be responsible (what class) of creating objects of one class(B).
+Answer: Assign it to a class A if one of the following situations is TRUE.
+
+a) A creator contains or aggregates B
+b) A records B
+c) A closely uses B
+d) A has the initializating data for B
+
+Hwo whould be responsible forcrating ChessCell? CHEESBOARD
