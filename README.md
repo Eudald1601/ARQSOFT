@@ -488,3 +488,27 @@ There is nothing wrong on coupling with stable elements.
    - Local variables
    - Return values
 How to use clean architecture?? Make that elements in one layer do not depend on elements that appear in outer layers.    
+
+
+***COUPLING /DIP Final Words***
+1. Identifying breaks of DIP naming packages
+   -Include in the names of the packages name of the layer.
+
+2. Define more complex methods for reducing coupling.
+
+**Single Responsibility Principle (SRP)**
+
+Cohesion: Measurement of how strongly related and focused the responsibility of an element are.
+
+Element can be classes or packages.
+
+Goals of design
+
+Reducing as much as possible coupling increasing cohesion.
+
+Formulation 1:
+   - A class should have only one reason to change. A program usually must satisly requirements coming from differnet sources.
+      - Human resources
+      - Econmics
+      - Academic
+         
