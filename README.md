@@ -550,3 +550,45 @@ c) A closely uses B
 d) A has the initializating data for B
 
 Hwo whould be responsible forcrating ChessCell? CHEESBOARD
+
+**GRASP EXPORT**
+
+QUESTION: What is a general principle for answering responsibilities to objects?
+
+ANSWER: Assign the responsibility the class that has the information required to fulfill the responsibility. As long as this decision keeps high cohesion and low coupling.
+
+CONTRAINDICATIONS:
+
+Sometimes it leads to low cohesion:
+   - Do not save yourself
+   - Do not print yourself
+
+DISCUSSION:
+
+What if the information is distributed in more than one class?
+
+To study these classes, and eventually assign the responsibility to one of them (respecting the SRP and Low Coupling), and make it a kind of "task controller")
+
+REMAINING PROBLEM:
+
+What if assigning the responsibility to one of the classes identified break the SRP or pramatically increases coupling?
+
+PUREFABRICATION:
+
+Question: What if assigning the responsibility to one of the classes identified break the SRP or pramatically increases coupling?
+
+Answer: Assign the responsability to an "artificail" convenience class, which does not represent any domain object/concept what is highly cohesine and as low coupled as possible.
+
+NAMING OF PURE FABRICATION CLASSES:
+
+The names must include NOUNS. Not verbs. (Saver, Printer...)
+
+POLIYMORPHISM
+
+Question: How to assign a certain responsability when the behaviour depends on type?
+ 
+Answer: Assign the responsability to a inheritance hierarchy using polimorphic method, so that each behaviour is assigned to onw of the subclasses.
+
+If there is a behaviour by default => behaviour in superclass.
+
+If not, superclass is abstract.
