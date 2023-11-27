@@ -592,3 +592,44 @@ Answer: Assign the responsability to a inheritance hierarchy using polimorphic m
 If there is a behaviour by default => behaviour in superclass.
 
 If not, superclass is abstract.
+
+ODD: GENERAL STRATEGY (PROCESS)
+
+Starting poing: use cases
+
+1) Select one use case: The most rellevant:
+     -  Case study: PlayChessTurn
+  
+2) If the use case contains different potential starting points assimilate each one to one method.
+3) For each operation (as identified in step 2) Collect all the scenarios
+4) For each step in the scenarios (in alternative scenarios - extensions) Start with trigger envents.
+     - Identify the action described in the step (orTE) -> Assign a method to it or break it in smaller actions (assigning one method to each action)
+     - Assign a name to the methods should contains a verb and indicate what the method will be in charge of
+     - Identify what objecs (data the method will require for performing it's job -> candidates for arguments)
+     - Identify:
+          - Whatever the method has to return a value or not
+          - If it has to return a value identify it's type / class
+          - Identify exceptional situations
+          - If any -> include an exception class in your design.
+      
+5) Specify what the method has to do
+6) Identify the class where this method has to be places (Assignment of responibility- apply GRASP/SOLID) Identify class that invokes the method.
+
+Example: PlayChessTurn
+
+a) Player proposes to move
+
+b) Player proposes to temporally stop
+
+c) Player proposes requests draw
+
+Assimilate a) to a method
+
+Name: MovePiece
+
+Arguments: Chessboard, rO, cO, rD, cD.
+
+2a) System noticies that either there is not any piece in origin cell or there is a piece o the opponent:
+   - Exception situation:
+     Exception: OriginExcepion
+   - getPieceColorInCell(rO, cO, ChessBoard)
