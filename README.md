@@ -592,7 +592,7 @@ Answer: Assign the responsability to a inheritance hierarchy using polimorphic m
 If there is a behaviour by default => behaviour in superclass.
 
 If not, superclass is abstract.
-
+ 
 ODD: GENERAL STRATEGY (PROCESS)
 
 Starting poing: use cases
@@ -633,3 +633,34 @@ Arguments: Chessboard, rO, cO, rD, cD.
    - Exception situation:
      Exception: OriginExcepion
    - getPieceColorInCell(rO, cO, ChessBoard)
+
+
+**SOFTWARE DESIGN PATTERNS**
+Touple formed by:
+
+1) A well-known and recurrent design problem IDENTIFICATION
+2) A formalized solution for this problem, including:
+   - STRUCTURE (Classes and relationships -UML class diagram)
+   - PARTICIPANTS (Roles for the classes)
+   - COLLABORATIONS between the objects for solving the problem)
+  
+3) Discussion on the problem and solution including: consequences advantages, disadvantages and trade-offs...
+
+- They are RECIPES.
+- They capture and preserve important design experience.
+- They build a design vocabulary
+
+
+GoF: gang of four
+
+
+**VISITOR PATTERN**
+To be used in evaluation of POSTFIX expression!!!
+
+CONTEXT and PROBLEM:
+- We have a structure of elements of different types.
+
+STRUCTURE:
+- list, graph, tree ...
+
+PROLEM: Traveise the structure ( visit all us elements) and while visiting each element, perform a task which dpends on the type of the element
