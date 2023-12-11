@@ -664,3 +664,7 @@ STRUCTURE:
 - list, graph, tree ...
 
 PROLEM: Traveise the structure ( visit all us elements) and while visiting each element, perform a task which dpends on the type of the element
+
+I have toperform a traversal1 on this structre on ElementA objects, this traversal1 will does certain task on ElementB traversal1 will perform a different task. The problem is to whom I hae to assign traversal1? GRASP Pattern: Polymorphism specify abstract method on Element, and program different implementations in ElementA and ElementB.
+
+Imagine that my project has to implement, not one traversal, but P traversals. 
