@@ -750,3 +750,11 @@ A1 -> dependOnMe = {Eliminar(B7), ....}
 A2 -> dependOnMe = {B7, ....}
 
 C2 -> dependOnMe = {B7, ....}
+
+** FABRICA ABSTRACTA (ABSTRACT FACTORY) **
+
+Patron para CREAR objectos
+
+Objectos genéricos: porgramar contra abstracciones tanto como podamos
+
+Solución: poner código para crear classes de cada familia en una classe Fabrica.
