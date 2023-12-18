@@ -706,3 +706,47 @@ dfs(nodo, visited):
    quita nodos de visitado
 
 ```
+
+Para detectar dependencias circulares en Celda:
+
+Lista de celdas de las que depende la formula que se intenta depositar en esa celda. iDependOn
+
+2NDO PROBLEMA: Recalcular Formulas.
+
+¿Dónde comienza el proceso?
+
+En la celda que se está editando.
+
+¿Cuando?
+
+Cuando se idata (da igual el tipo de contenido que se esté intentando dipositar en la celda)
+
+¿Estructura de soporte?
+
+Lista de celdas que contienen formulas que dependen del contenido de ESTA celda. LIST dependOnMe
+
+Implicaciones:
+
+Cada vez que en una celda se deposita una fórmula, hay que visitar todas las celdas de las que esa fórmula depende y añadir CELDA a sus listas dependOnMe
+
+Ejemplo:
+
+T1
+
+B7 = 3 + A1 * C2
+
+En B7 -> iDependOn = {A1, C2}
+
+En A1 -> dependOnMe = {B7, ....}
+
+En C2 -> dependOnMe = {B7, ....}
+
+En T2
+
+B7 = 3 + A2 * C2
+
+A1 -> dependOnMe = {Eliminar(B7), ....}
+
+A2 -> dependOnMe = {B7, ....}
+
+C2 -> dependOnMe = {B7, ....}
