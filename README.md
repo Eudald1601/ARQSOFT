@@ -668,3 +668,41 @@ PROLEM: Traveise the structure ( visit all us elements) and while visiting each 
 I have toperform a traversal1 on this structre on ElementA objects, this traversal1 will does certain task on ElementB traversal1 will perform a different task. The problem is to whom I hae to assign traversal1? GRASP Pattern: Polymorphism specify abstract method on Element, and program different implementations in ElementA and ElementB.
 
 Imagine that my project has to implement, not one traversal, but P traversals. 
+
+
+** FORMULAS **
+2.Problemas:
+
+1- Deteccion de dependencias circulares
+
+¿Dónde comienza la deteción?
+
+En la celda que se está editando
+
+¿Cuando?
+
+Cuando se intenta entrar una fórmula en esa celda
+
+¿Qué datos va a soportar esa detección?
+
+Lista de celdas de las que la nueva formula DEPENDA!!
+
+¿Cómo se estructuran las dependencias?
+
+Como un ÁRBOL
+
+¿Cómo se detectan dependencias circulares?
+
+DFS modificado
+
+```
+dfs(nodo, visited):
+   añade nodo a visitado
+   bucle nodo
+   if lujo no en visitados:
+      dfs(hijo, visitados)
+   if not:
+      raise Exception(Dependencia circular)
+   quita nodos de visitado
+
+```
